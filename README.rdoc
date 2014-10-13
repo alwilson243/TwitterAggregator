@@ -1,0 +1,9 @@
+Work in Progress*
+
+Wishlist: 
+
+1) Change from personal twitter account
+
+2) Respond in real-time to tweets directed to this account
+
+3) Capture word cloud as image and tweet back the image

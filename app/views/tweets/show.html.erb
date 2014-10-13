@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <script>
+
+      var hash = <%= raw $word_map.to_json %> 
+      var constraint = <%= @length/100 %>
+
+      var array = []
+
+      _.each(Object.keys(hash), function (key) {
+
+        if(hash[key] > constraint) {
+          var obj = {}
+          obj.text = key;
+          obj.weight = hash[key];
+          array.push(obj);
+
+        }
+      });
+
+      $(function() {
+        // When DOM is ready, select the container element and call the jQCloud method, passing the array of words as the first argument.
+        $("#example").jQCloud(array);
+      });
+     </script> 
+  </head>
+  <body>
+    <!-- You should explicitly specify the dimensions of the container element -->
+    <div id="example" style="width: 550px; height: 350px;"></div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1 @@
+TwitterAggregator::Application.config.secret_key_base = "e767f54605b6fe3a0f6872e3119d427293ca3dc8771bf103e4ed4218f7afb21fc6077458bf600ba82ddf83e3976a63d15d4e44f9472a7c4b3045f58bb5fb3782"

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <br>
+
+
+<% if current_user %>
+  <ul id="list">
+   <% @timeline.each do |tweet| %>
+      <li>
+        <%= link_to tweet.text, tweet_path(tweet, :type => "stream", :amount => 100) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+
+     
+</html>
